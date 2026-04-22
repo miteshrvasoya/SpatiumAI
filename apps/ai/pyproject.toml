@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "spatiumai-ai"
+version = "0.1.0"
+description = "SpatiumAI AI Service — LLM Resolution Generator"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
