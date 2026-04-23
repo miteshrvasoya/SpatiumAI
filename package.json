@@ -7,6 +7,12 @@
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r --parallel dev",
+    "dev:frontend": "pnpm -C Frontend dev",
+    "dev:api": "pnpm --filter @spatiumai/api dev",
+    "dev:worker": "pnpm --filter @spatiumai/worker dev",
+    "dev:parser": "docker compose up parser",
+    "dev:ai": "docker compose up ai",
+    "dev:docker": "docker compose up",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
