@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { WaitlistForm } from './WaitlistForm';
 
 export function CTASection() {
   return (
@@ -38,23 +39,9 @@ export function CTASection() {
             Join 40+ architecture firms using SpatiumAI to eliminate compliance delays and ship first-time-pass designs.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/signup"
-              className="group flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-8 py-4 font-space-grotesk font-semibold text-white transition-all hover:bg-[#5a98ff] hover:shadow-xl hover:shadow-[var(--accent-primary)]/30 active:scale-95"
-            >
-              Start Free Trial — 10 Designs
-              <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            <Link
-              href="/contact-sales"
-              className="flex items-center justify-center gap-2 rounded-xl border border-[var(--bg-border-hover)] px-8 py-4 font-space-grotesk font-semibold text-[var(--text-primary)] transition-all hover:border-[var(--accent-primary)]/40 hover:bg-[var(--accent-primary)]/8"
-            >
-              Schedule a Live Demo
-            </Link>
+          {/* Waitlist Form */}
+          <div className="flex justify-center mt-2">
+            <WaitlistForm />
           </div>
 
           {/* Social proof metrics */}
